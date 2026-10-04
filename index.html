@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Lost & Found</h1>
+        <p>Find what you lost. Return what you found.</p>
+    </header>
+
+    <main>
+        <section class="form-card">
+            <h2>Report an Item</h2>
+            <form id="itemForm">
+                <input id="itemName" type="text" placeholder="Item name" required>
+                <select id="itemType" required>
+                    <option value="">Select type</option>
+                    <option value="Lost">Lost</option>
+                    <option value="Found">Found</option>
+                </select>
+                <input id="location" type="text" placeholder="Location" required>
+                <input id="date" type="date" required>
+                <input id="contact" type="text" placeholder="Contact information" required>
+                <textarea id="description" placeholder="Short description" required></textarea>
+                <button type="submit">Submit Report</button>
+            </form>
+            <p id="status"></p>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2>Reported Items</h2>
+                <input id="search" type="search" placeholder="Search items...">
+            </div>
+            <div id="items" class="items-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cloud Computing Mini Project</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
